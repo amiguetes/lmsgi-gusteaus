@@ -3,3 +3,13 @@ background-color: #fff8f0;
 font-family: 'Times New Roman', Times, serif;
 font-size: 16px;
 }
+
+div.encabezado{
+background-image: url(../imgs/guesteaus.png);
+font: #5a3e36;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 36px;
+text-align: center;
+height: 200px;
+background-position: 20cm;
+}
