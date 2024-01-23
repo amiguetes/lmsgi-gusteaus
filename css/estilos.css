@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
@@ -6,29 +12,51 @@
 
 div.encabezado{
     background-image: url(../imgs/guesteaus.png);
+    background-size: cover;
+    background-position: center;
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 36px;
+    font-weight: bold;
     text-align: center;
     padding: 20px;
 }
 
 div.encabezado img{
-    max-width: 80px;
+    max-width: 70px;
     height: auto;
     margin-right: 50px; 
 }
 
-div.menu ul li a{
+#contenedor.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.menu {
     background-color: #a77e58;
+    text-align: center;
+}
+
+div.menu ul li{
+    display: inline;
+    list-style: none;
+    padding: 15px;
+}
+
+div.menu ul li a{
     color: #ffffff;
     font-family: 'Helvetica', sans-serif;
     font-size: 18px;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 div.menu ul li a:hover {
-    color: #8b6f47;
+    color: #5a3e36;
+    background-color: #ecdcc6;
+    text-decoration: underline;
 }
 
 div.contenido{
@@ -36,6 +64,8 @@ div.contenido{
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: left;
+    width: 70%;
 }
 
 div.sidebar{
@@ -43,6 +73,8 @@ div.sidebar{
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: right;
+    width: 30%;
 }
 
 div.pie ul li{
@@ -57,15 +89,18 @@ div.pie ul li a{
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 div.pie ul li a:hover {
-    color: #8b6f47;
+    color: #423522;
+    background-color: #ecdcc6;
+    text-decoration: underline;
 }
 
 div.pie{
-    background-color: #a77e58;
-    color: #ffffff;
+    background-color: #5a3e36;
+    color: #ecdcc6;
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     text-align: center;
