@@ -47,7 +47,7 @@ div.menu ul li a{
     color: #ffffff;
     font-family: 'Helvetica', sans-serif;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ div.pie ul li a{
     color: #ecdcc6;
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
 }
 
