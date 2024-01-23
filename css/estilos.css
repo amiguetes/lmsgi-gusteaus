@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+}
+
 #contenedor{
     background-color: #fff8f0;
     font-size: 16px;
@@ -13,8 +17,28 @@ div.encabezado{
     font-size: 36px;
     text-align: center;
     padding-top: 48%;
-    padding-bottom: 48%;    
-    text-shadow: 6px 6px 8px #fff8f0;
+    padding-bottom: 48%;
+    text-shadow:0 0 10px #fff8f0;
+    letter-spacing: 2px;
+}
+
+div.encabezado > img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    border-radius: 10%;
+}
+
+div.menu ul{
+    text-align: center;
+    padding: 20px;
+    background-color: #a77e58;
+}
+
+div.menu ul li{
+    display:inline-block;
+    padding: 10px 20px;
 }
 
 div.menu ul li a{
@@ -43,10 +67,30 @@ div.sidebar{
     font-size: 18px;
 }
 
-div.pie{
-    background-color: #a77e58;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+div.pie {
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+div.enlacespie > a{
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 10px;
+    display: inline-block; 
+    transition: all .2s ease-in;
+}
+
+div.enlacespie > a:hover{
+    text-decoration:none;
+    text-shadow: 2px 2px 6px #fff8f0;
 }
