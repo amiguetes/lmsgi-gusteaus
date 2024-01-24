@@ -1,0 +1,142 @@
+
+#contenedor {
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+div.encabezado {
+    background-image: url(/imgs/guesteaus.png);
+    background-position: center;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+div.encabezado > .logo{
+    height: 180px;
+    width: 500px;
+    margin-left: auto;
+    background-image: url(/imgs/favicon.png);
+}
+
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #a77e58; /* Color de fondo marrón claro */
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Estilo para cada elemento de la lista (li) */
+.menu li {
+    display: inline-block; /* Mostrar los elementos en línea */
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+/* Estilo para los enlaces (a) dentro de los elementos de la lista */
+.menu a {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto blanco */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Transición suave en el color del texto al pasar el mouse */
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.menu a:hover {
+    color: #5a3e36; /* Color de texto marrón oscuro al pasar el mouse */
+}
+
+/* Efecto visual al pasar el mouse sobre un elemento de la lista */
+.menu li:hover {
+    background-color: #8e735e; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        text-align: center; /* Centrar elementos en dispositivos móviles */
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Agregar un estilo de "hamburguesa" para el menú en dispositivos móviles */
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn:checked + .menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px; /* Ajustar según sea necesario */
+        left: 0;
+        width: 100%;
+        background-color: #a77e58;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+
+div.contenido {
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+div.sidebar {
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    padding: 20px; 
+    margin: 0 20px 20px 20px; 
+}
+
+div.pie {
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+div.pie ul {
+    list-style: none;
+    padding: 0;
+    margin: 10;
+    text-align: center;
+}
+
+div.pie ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+div.pie ul li a{
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center; 
+}
