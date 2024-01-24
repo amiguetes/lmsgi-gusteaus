@@ -1,10 +1,53 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 #contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
     font-size: 16px;
  }
+
+#contenedor div.encabezado {
+    background-image: url('../imgs/guesteaus.png');
+    background-size: cover;
+    background-position: 80% 75%;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    text-align: center; 
+    height: 150px;
+    line-height: 150px;
+}
+#contenedor div.menu ul li a{
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#contenedor div.menu ul li a:hover {
+    background-color: #8b6f47;
+}
+
+#contenedor div.menu {
+    background-color: #a77e58;
+}
+#contenedor div.contenido {
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+}
+
+#contenedor div.sidebar {
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+}
+
+#contenedor div.pie {
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}

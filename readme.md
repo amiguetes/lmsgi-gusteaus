@@ -36,3 +36,7 @@ Los ejercicios propuestos en clase te guiarán a través de varios aspectos del 
 ### Contribuciones y Feedback
 
 Como este es un proyecto educativo, se anima a los estudiantes a colaborar y ayudarse mutuamente. Si tienes sugerencias o encuentras problemas, no dudes en abrir un issue en el repositorio o discutirlo con tus compañeros y profesores.
+
+### TAREAS PARA HACER
+
+1-2-3-4-5-8-9
