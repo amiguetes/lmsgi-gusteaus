@@ -5,12 +5,15 @@ font-size: 16px;
 }
 
 div.encabezado{
+    background-image: url(../imgs/somelier-removebg-preview.png);
 background-image: url(../imgs/guesteaus.png);
+background-repeat: no-repeat;
+background-size: cover;
 color: #5a3e36;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 36px;
 text-align: center;
-height: 180px;
+height: 310px;
 background-position: bottom;
 }
 
@@ -40,9 +43,14 @@ div.sidebar{
 }
 
 div.pie{
-    background-color: #a77e58;
-    color: #ffffff;
+    background-color: #5a3e36;
+    color: #ecdcc6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
+
+}
+
+div.pie a{
+    padding: 3%;
 }
