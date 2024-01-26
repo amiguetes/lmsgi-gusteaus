@@ -1,8 +1,15 @@
+#contenedor {
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
 input[type='text'], 
 input[type='email'], 
 input[type='tel'],
 input[type='number'],
-input[type='datetime-local']{
+input[type='datetime-local'],
+textarea{
     border: 1px solid #a77e58;
     padding: 10px;
     border-radius: 5px;
@@ -23,5 +30,108 @@ button:hover {
 
 label {
     font-size: 16px;
+    display: block;
+    font-family: 'Helvetica', sans-serif;
+}
 
+div.encabezado{
+    background-image: url(../imgs/guesteaus.png);
+    background-size: cover;
+    background-position: center;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.encabezado img{
+    max-width: 80px;
+    height: auto;
+    margin-right: 50px;
+}
+
+div.encabezado p{
+    text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff
+}
+
+div.menu {
+    background-color: #a77e58;
+    text-align: center;
+}
+
+div.menu ul {
+    margin: 4px 0px;
+    padding: 10px;
+}
+
+div.menu ul li{
+    display: inline;
+    list-style: none;
+    padding: 15px;
+}
+
+div.menu ul li a{
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+div.menu ul li a:hover {
+    color: #5a3e36;
+    background-color: #ecdcc6;
+    text-decoration: none;
+}
+
+div.formulario{
+    background-color: #fff8f0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+div.formulario form{
+    background-color: #ffffff;
+    border: solid 2px #c5a282;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+div.pie{
+    clear: both;
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 1px;
+    margin: 4px 0px;
+}
+
+div.pie ul li{
+    display: inline;
+    list-style: none;
+    padding: 8px;
+    
+}
+
+div.pie ul li a{
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+div.pie ul li a:hover {
+    color: #423522;
+    background-color: #ecdcc6;
+    text-decoration: none;
 }
