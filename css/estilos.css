@@ -116,4 +116,43 @@ div.enlacespie > a:hover{
     text-shadow: 2px 2px 6px #fff8f0;
 }
 
+form{
+    margin: 5% 38%;
+    padding: 2%;
+    width: fit-content;
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+label{
+    padding: 5%;
+}
+
+label::before{
+    content: "\A"; 
+    white-space: pre;
+}
+
+input{
+    width: 100%;
+}
+
+fieldset{
+    margin: 5% 0;
+    border-style: dashed;
+    border-color: #5a3e36;
+}
+
+input[type='text'], input[type='email'], input[type='tel'],input[type='number'],input[type='datetime-local'],input[type='comentarios']{
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    border: 2px solid #a77e58;
+    color: #5a3e36;
+    font-size: 16px;
+}
+
+
 
