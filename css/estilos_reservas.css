@@ -99,6 +99,7 @@ div.formulario{
 div.formulario form{
     background-color: #ffffff;
     border: solid 2px #c5a282;
+    border-radius: 10px;
     padding: 10px;
     box-sizing: border-box; 
 }
