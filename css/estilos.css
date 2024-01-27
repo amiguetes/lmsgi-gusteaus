@@ -234,6 +234,7 @@ main {
 
 ul li span {
     display: none;
+    transition: font-size 0.7s ease;
 }
 
 [data-alergenos~="mariscos"] span.mariscos,
@@ -245,6 +246,6 @@ ul li span {
     display: inline;
 }
 
-li:hover > span {
+ul li:hover > span {
     font-size: 24px;
 }    
