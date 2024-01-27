@@ -59,21 +59,122 @@ nav ul li a:hover {
 }
 
 main{
-    display: flex;
+    text-align: center;    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+main section.menu-estrella{
+    margin: 10px 10px;
+    padding: 0px 30px;
+    background-color: #ecdcc6;
+    border-radius: 20px;
+    width: 40%;
+}
+
+main section.menu-estrella ul {
+    padding: 5px 30px 5px 30px;
 }
 
 main section.menu-estrella ul li{
     list-style: none;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 7px 0px;
+
 }
 
 main section.menu-estrella h2{
-
     color: #5a3e36;
-    font-size: 35px;
+    font-size: 45px;
     font-style: italic;
     text-decoration: underline;
+    
+}
+
+main section.tabla-alergenos{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #ecdcc6;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+main section.tabla-alergenos ul {
+    padding: 5px 30px 5px 30px;
+}
+
+main section.tabla-alergenos ul li{
+    list-style: none;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+main section.tabla-alergenos h2{
+    color: #5a3e36;
+    font-size: 40px;
+}
+
+li[data-alergenos="nueces mariscos"]{
+    color: #b13200;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="nueces"]{
+    color: #6d3500;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="mariscos"]{
+    color: #ff7b00;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="apio"]{
+    color: #2a9221;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="lacteos"]{
+    color: #696969;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="pescado"]{
+    color: #2528c5;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="moluscos"]{
+    color: #20a190;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo"]{
+    color: #afa510;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo mariscos"]{
+    color: #bb3434;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo lacteos"]{
+    color: #7540a7;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos]:hover{
+    text-decoration: underline;
+    font-size: 30px;
 }
 
 footer {
