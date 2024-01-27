@@ -5,6 +5,7 @@
     <title>Restaurante Gusteau's</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div id="contenedor">
@@ -13,13 +14,15 @@
             <p>Restaurante Gusteau's</p>
         </div>
         <div class="menu">
-            <ul>
+            <ul id="nav">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#reservas">Reservas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <i class="material-symbols-outlined" onclick="closeBar()">close</i>
             </ul>
+            <i class="material-symbols-outlined" onclick="openBar()">menu</i>
         </div>
         <div class="contenido">
             <h1>Bienvenidos a Gusteau's</h1>
@@ -55,5 +58,16 @@
             <p>&copy; 2024 Restaurante Gusteau's - París, Francia</p>
         </div>
     </div>
+    <script>
+        var sidebar = document.getElementById("nav");
+
+        function openBar() {
+            sidebar.style.right = "0px";
+        }
+
+        function closeBar() {
+            sidebar.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
