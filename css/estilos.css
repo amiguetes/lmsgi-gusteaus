@@ -38,15 +38,18 @@ div.encabezado > img{
     width: 10%;
     border-radius: 10%;
 }
-
+div.menu,
 div.menu ul li a {
     background-color: #a77e58;
     color: #ffffff;
     font-family: 'Helvetica', sans-serif;
     font-size: 18px;
     text-decoration: none;
-    transition: 1s ease;
     
+    
+}
+div.menu ul li a {
+    transition: 1s ease;
 }
 
 div.menu ul{
@@ -64,6 +67,11 @@ div.menu ul li{
 
 div.menu ul li a:hover {
     color: #5a3e36;
+    background-color: #c18d5d;
+    text-decoration-line: underline;
+    box-shadow: 0px 0px 20px #d89f69;
+    border-radius: 10%;
+    transition: 1s ease;
 }
 
 div.contenido {
