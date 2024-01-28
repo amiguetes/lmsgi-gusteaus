@@ -3,15 +3,16 @@
     border: 1px solid rgb(113, 187, 192);
 } */
 
- /* * {
+ body{
     margin: 0px;
     padding: 0px; 
-}  */
+} 
 
 #contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    clear: both;
 }
 
 div.encabezado {
@@ -79,6 +80,10 @@ div.contenido {
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: left;
+    width: calc(70% - 20px);
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 div.sidebar {
@@ -86,6 +91,10 @@ div.sidebar {
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: right;
+    width: calc(30% - 20px);
+    padding: 0 10px;
+    border-radius: 2px;
 }
 
 div.pie {
@@ -96,6 +105,8 @@ div.pie {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
+    display:inline-block;
+    width: 100%;
     
 }
 
