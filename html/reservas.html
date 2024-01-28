@@ -17,34 +17,35 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="./../index.html">Inicio</a></li>
                 <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
                 <li><a href="./menu.html">Menú</a></li>
                 <li><a href="./reservas.html">Reservas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        <div class="contenido">
-            <h3>Reservas</h3>
+        <div class="informacion">
+            <h2> Haz tu Reserva</h2>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente
-                elegante y acogedor.</p>
+                elegante y acogedor.</p><br>
         </div>
-        <div>
+        <div class="reservas">
             <form action="" method="get">
 
                 <label for="nom">Nombre</label>
                 <input type="text" id="nom" name="nombre" maxlength="50" placeholder="Nombre" required><br>
 
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="gusteau@gmail.com" required><br>
 
                 <label for="telefon">Teléfono</label>
-                <input type="tel" id="telefon" name="Telefono" placeholder="000-000-000" required><br>
+                <input type="tel" id="telefon" name="Telefono" placeholder="000-000-000" required pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}"><br>
 
                 <label for="data">Fecha</label>
                 <input type="date" id="data" name="fecha y hora" value="" required><br>
 
                 <label>Número de personas</label>
+                <label>Hora</label>
                 <select name="persones">
                     <option value="" disabled selected hidden>Personas</option>
                     <option>1</option>
@@ -69,7 +70,7 @@
                     <option>20</option>
                 </select><br>
 
-                <label>Hora</label>
+               
                 <select name="hora de reserva">
                     <option value="" disabled selected hidden>Hora</option>
                     <option>13:00</option>
@@ -92,7 +93,7 @@
                 <textarea id="comentarios" name="peticiones" cols="30" rows="5"
                     placeholder="Escriba aquí sus comentarios"></textarea><br>
 
-                <input type="submit" value="Reservar Mesa">
+                <input type="submit" id="boton" value="Reservar Mesa">
 
             </form>
         </div>

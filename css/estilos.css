@@ -47,7 +47,6 @@ div.menu ul li a {
     font-size: 18px;
     text-decoration: none;
     
-    
 }
 div.menu ul li a {
     transition: 1s ease;
@@ -125,3 +124,77 @@ div.enlacespie > a{
 div.enlacespie > a:hover{
     color: #291814;
 }
+
+/* Reservas */
+
+div.informacion{
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+div.reservas{
+    display: inline-block;
+    width: 100%;
+}
+div.reservas form{
+    margin: 0 auto;
+    width: 40%;
+}
+
+div.reservas form input:not(#boton){
+    border: 1px solid;
+    border-color: #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    display: block;
+    width: 100%;
+}
+
+
+div.reservas select{
+    border: 1px solid;
+    border-color: #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    display: block;
+    width: 45%;
+    position: relative;
+
+}
+
+div.reservas input#boton{
+    background-color: #5a3e36;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+div.reservas input#boton:hover{
+    background-color: #a77e58;
+    transition: 1s ease;
+    
+}
+
+div.reservas label{
+    font-size: 16px;
+    width: 40%;
+}
+
+div.reservas textarea{
+    border: 1px solid;
+    border-color: #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    display: block;
+    width: 100%;
+}
+
