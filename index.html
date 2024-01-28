@@ -32,8 +32,40 @@
             </ul>
             <h3>Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+            
+            <form method="post" name="reserva" id="reserva">
+                <ul>
+                  <li>
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                  </li>
+                  <li>
+                    <label>Email:</label>
+                    <input type="email" id="mail" name="mail" required>
+                  </li>
+                  <li>
+                    <label>Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" required>
+                  </li>
+                  <li>
+                    <label>Comensales:</label>
+                    <input type="number" name="comensales" id="comensales" maxlength="50" required>
+                  </li>
+                  <li>
+                    <label>Fecha y hora:</label>
+                    <input type="date" name="dia" id="dia" required>
+                    <input type="time" name="hora" id="hora" required>
+                  </li>
+                  <label>Comentarios:</label>
+                  <textarea cols="40" rows="5" name="comentarios" id="comentarios" maxlength="200">Pon aquí tus comentarios o peticiones</textarea>
+                  <br>
+                  <input type="submit" value="Reservar Mesa">
+                </ul>
+              </form>
             <h3>Contacto</h3>
             <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+
+
         </div>
         <div class="sidebar">
             <h2>Eventos Especiales</h2>

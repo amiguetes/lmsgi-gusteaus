@@ -97,3 +97,32 @@ div#contenedor::after {
     display: table;
     clear: both;
 }
+
+#nombre, #mail, #telefono, #comensales, #dia, #hora, #comentarios {
+    padding: 10px;
+    border: 1px solid #a77e58;
+    border-radius: 5px;
+    background-color: #5a3e36;
+    color: #ecdcc6;
+}
+
+input[type="submit"]{
+    background-color: #5a3e36;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+background-color: #a77e58;
+}
+
+#reserva label{
+size: 16px;
+display: block;
+}
+
+#reserva{
+    border: #5a3e36 solid 2px;
+    list-style-type: none;
+}
