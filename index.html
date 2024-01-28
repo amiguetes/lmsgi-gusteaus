@@ -37,6 +37,32 @@
             </ul>
             <h3 id="reservas">Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+            <form action="/php/realizar_reserva.php" method="post" enctype="text/plain">
+                
+                <fieldset>
+                    <legend>Datos Reserva</legend>
+                    <label>Nombre:
+                        <input type="text" name="nombre" required class="userinput" maxlength="100" placeholder="Nombre Completo" oninvalid="this.setCustomValidity('Introduzca su nombre completo')" oninput="this.setCustomValidity('')">
+                    </label>
+                    <label>Email:
+                        <input type="email" name="email" required class="userinput" maxlength="100" placeholder="Email de Contacto" oninvalid="this.setCustomValidity('Introduzca un email válido')" oninput="this.setCustomValidity('')">
+                    </label>
+                    <label>Teléfono:
+                        <input type="tel" name="telefono" required class="userinput" maxlength="9" minlength="9" pattern="[6-9][0-9]{8}" placeholder="Teléfono de Contacto" oninvalid="this.setCustomValidity('Introduzca un teléfono de contacto')" oninput="this.setCustomValidity('')">
+                    </label>
+                    <label>Fecha:
+                        <input type="date" name="fecha" id="fechaReserva" required class="userinput" oninvalid="this.setCustomValidity('Indique el día de la reserva')" oninput="this.setCustomValidity('')">
+                    </label>
+                    <label>Hora:
+                        <input type="time" name="hora" required class="userinput" min="12:00:00" max="00:00:00" oninvalid="this.setCustomValidity('Indique la hora de la reserva de 12:00 AM a 12:00 PM')" oninput="this.setCustomValidity('')">
+                    </label>
+                    <label>Peticiones Especiales:
+                        <textarea name="peticiones" class="userinput" rows="10" maxlength="500" placeholder="¿Algo a tener en cuenta a la hora de procesar su reserva?"></textarea>
+                    </label>
+                    <h6>Los campos requeridos están marcados con un *</h6>
+                </fieldset>
+                <button type="submit">Reservar Mesa</button>
+            </form>
             <h3 id="contacto">Contacto</h3>
             <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
         </div>
@@ -60,15 +86,15 @@
     </div>
     
     <script>
-        var sideNavBar = document.getElementById("navbar");
-
         function openBar() {
-            sideNavBar.style.right = "0px";
+            navbar.style.right = "0px";
         }
 
         function closeBar() {
-            sideNavBar.style.right = "-200px";
+            navbar.style.right = "-200px";
         }
+
+        fechaReserva.min = new Date().toISOString().split("T")[0];
     </script>
 </body>
 </html>

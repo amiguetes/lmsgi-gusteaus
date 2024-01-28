@@ -36,7 +36,7 @@ div.encabezado {
 #logo {
     width: 75px;
     height: 75px;
-    border-radius: 20%;
+    border-radius: 10px;
     position: absolute;
     left: 0px;
 }
@@ -75,7 +75,8 @@ div.menu .material-symbols-outlined {
 
 #navbar {
     font-size: 18px;
-    transition: color 400ms, background-color 400ms;
+    margin-left: 15px;
+    transition: color 400ms, background-color 400ms
 }
 
 #navbar li a:hover {
@@ -99,7 +100,7 @@ div.sidebar {
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 18px;
-    padding: 0px 35px 15px;
+    padding: 0px 35px 100%;
     float: right;
     width: 30%;
 }
@@ -112,6 +113,73 @@ div.pie {
     text-align: center;
     padding: 0px 25px 15px;
     clear: both;
+}
+
+form {
+    margin: 15px 30px;
+}
+
+fieldset {
+    padding: 0px 20px 20px;
+    border-radius: 5px;
+    border-color: #a77e58;
+}
+legend {
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+form fieldset h6 {
+    color: #a77e58;
+    margin: 5px 0px 0px;
+}
+
+.userinput {
+    display: block;
+    border: 1px solid #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+    color: #5a3e36;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.userinput::placeholder {
+    color: #a77e58;
+}
+
+button {
+    background-color: #5a3e36;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 15px;
+    float: right;
+    transition: background-color 200ms;
+}
+
+button:hover {
+    background-color: #a77e58;
+    cursor: pointer;
+}
+
+h3#contacto {
+    clear: right;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+label:has(input:required)::before {
+    content: "*";
+    margin-right: 5px;
+    color: #a77e58;
 }
 
 @media only screen and (max-width: 600px) {
@@ -163,11 +231,20 @@ div.pie {
     div.contenido {
         float: none;
         width: 100%;
+        padding: 0px 30px 30px;
     }
 
     div.sidebar {
         float: none;
         width: 100%;
-        padding: 10px 50px 20px;
+        padding: 5px 30px 15px;
+    }
+
+    form {
+        margin: 15px 0px;
+    }
+
+    fieldset {
+        padding: 0px 10px 10px;
     }
 }
