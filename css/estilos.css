@@ -85,6 +85,15 @@ div.contenido {
     padding: 0 10px;
 }
 
+.contenido p a{
+    color: #5a3e36;
+}
+
+.contenido p a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
 div.sidebar {
     background-color: #ecdcc6;
     color: #5a3e36;
@@ -161,8 +170,7 @@ div.reservas select{
     border-radius: 5px;
     background-color: #fff8f0;
     display: block;
-    width: 45%;
-    position: relative;
+    width: 100%;
 
 }
 
@@ -179,13 +187,16 @@ div.reservas input#boton{
 
 div.reservas input#boton:hover{
     background-color: #a77e58;
+    color: #291814;
     transition: 1s ease;
     
 }
 
 div.reservas label{
     font-size: 16px;
-    width: 40%;
+    font-weight: bold;
+    color: #5a3e36;
+    display: block;
 }
 
 div.reservas textarea{
@@ -213,7 +224,7 @@ main{
     width: 100%;
 }
 
-h2 {
+.menu-estrella h2 {
     text-align: center;
 }
 
@@ -222,17 +233,17 @@ section{
     margin: 0 auto;
 }
 
-ul{
+.menu-estrella ul{
     text-align: center;
     list-style:none;
     padding: 0;
 }
 
-ul li{
+.menu-estrella ul li{
     padding-bottom: 10px;
 }
 
-ul li:hover{
+.menu-estrella ul li:hover{
     font-size:larger;
     font-weight: bold;
     transition: 1s ease;
