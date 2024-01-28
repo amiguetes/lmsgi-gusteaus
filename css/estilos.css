@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -16,21 +17,27 @@ ul li {
     margin-left: 20px;
 }
 
-div#contenedor {
-    background-color: #fff8f0;
+div#contenedor, body {
+    background-color: #ecdcc6;
     font-family: 'Times New Roman', serif;
     font-size: 16px;
 }
 
-div.encabezado {
+div.encabezado, header {
     background-image: url(./../imgs/guesteaus.png);
     background-size: cover;
+    background-position: bottom;
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 36px;
     text-align: center;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    height: 350px;
+    padding-top: 120px;
+    text-shadow: 3px 3px #ffffff;
+}
+
+header {
+    font-size: 25px;
 }
 
 #logo {
@@ -39,14 +46,15 @@ div.encabezado {
     border-radius: 10px;
     position: absolute;
     left: 0px;
+    top: 0px;
 }
 
-div.menu {
+div.menu, nav {
     background-color: #a77e58;
     border-bottom: medium solid #5a3e36;
 }
 
-div.menu .material-symbols-outlined {
+div.menu .material-symbols-outlined, nav .material-symbols-outlined {
     display: none;
 }
 
@@ -65,12 +73,14 @@ div.menu .material-symbols-outlined {
     font-family: Helvetica, sans-serif;
     padding: 5px 10px;
     text-decoration: none;
+    border-radius: 20px;
     transition: background-color 400ms;
 }
 
 .nav li a:hover {
     background-color: #a77e58;
     text-decoration: underline 2px;
+    text-underline-offset: 3px;
 }
 
 #navbar {
@@ -82,10 +92,9 @@ div.menu .material-symbols-outlined {
 #navbar li a:hover {
     color: #5a3e36;
     background-color: #ecdcc6;
-    text-decoration: underline 2px;
 }
 
-div.contenido {
+div.contenido, section.menu-estrella {
     background-color: #fff8f0;
     color: #5a3e36;
     font-family: Georgia, serif;
@@ -95,17 +104,79 @@ div.contenido {
     width: 70%;
 }
 
-div.sidebar {
+section.menu-estrella ul li {
+    margin: 10px 20px;
+    transition: font-size 200ms;
+}
+
+section.menu-estrella ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+main ul li span::after{
+    content: "";
+    padding: 0px 5px;
+    font-size: 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 2px solid #5a3e36;
+    display: none;
+}
+
+span[nueces]::after {
+    background-color: brown;
+}
+
+span[mariscos]::after {
+    background-color: red;
+}
+
+span[lacteos]::after {
+    background-color: purple;
+}
+
+span[gluten]::after {
+    background-color: orange;
+}
+
+[data-alergenos~=nueces] span[nueces]::after {
+    display: inline;
+}
+
+[data-alergenos~=mariscos] span[mariscos]::after {
+    display: inline;
+}
+
+[data-alergenos~=lacteos] span[lacteos]::after {
+    display: inline;
+}
+
+[data-alergenos~=gluten] span[gluten]::after {
+    display: inline;
+}
+
+.sidebar {
     background-color: #ecdcc6;
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 18px;
-    padding: 0px 35px 100%;
+    padding: 0px 35px 35px;
     float: right;
     width: 30%;
 }
 
-div.pie {
+section.sidebar ul {
+    margin-top: 25px;
+}
+
+section.sidebar ul li {
+    margin: 10px 20px;
+    list-style: none;
+}
+
+div.pie, footer {
     background-color: #5a3e36;
     color: #ecdcc6;
     font-family: Helvetica, sans-serif;
@@ -119,6 +190,10 @@ form {
     margin: 15px 30px;
 }
 
+form#form-contacto {
+    margin: 20px 50px;
+}
+
 fieldset {
     padding: 0px 20px 20px;
     border-radius: 5px;
@@ -129,12 +204,12 @@ legend {
     font-weight: bold;
 }
 
-form fieldset h6 {
+form h6 {
     color: #a77e58;
     margin: 5px 0px 0px;
 }
 
-.userinput {
+.user-input {
     display: block;
     border: 1px solid #a77e58;
     padding: 10px;
@@ -145,7 +220,7 @@ form fieldset h6 {
     width: 100%;
 }
 
-.userinput::placeholder {
+.user-input::placeholder {
     color: #a77e58;
 }
 
@@ -176,14 +251,13 @@ label {
     font-weight: bold;
 }
 
-label:has(input:required)::before {
-    content: "*";
-    margin-right: 5px;
+label:has(.user-input:required)::before {
+    content: "* ";
     color: #a77e58;
 }
 
 @media only screen and (max-width: 600px) {
-    div.menu {
+    div.menu, nav {
         height: 50px;
     }
 
@@ -197,7 +271,7 @@ label:has(input:required)::before {
         padding: 50px 0px;
     }
 
-    div.menu .material-symbols-outlined {
+    div.menu .material-symbols-outlined, nav .material-symbols-outlined {
         display: block;
         width: 40px;
         font-size: 40px;
@@ -208,7 +282,7 @@ label:has(input:required)::before {
         transition: color 200ms;
     }
 
-    div.menu .material-symbols-outlined:hover {
+    div.menu .material-symbols-outlined:hover, nav .material-symbols-outlined:hover {
         color: #5a3e36;
     }
 
@@ -228,23 +302,44 @@ label:has(input:required)::before {
         right: 15px;
     }
 
-    div.contenido {
+    div.contenido, section.menu-estrella {
         float: none;
         width: 100%;
-        padding: 0px 30px 30px;
+        padding: 10px 30px 65px;
     }
 
-    div.sidebar {
+    section.menu-estrella {
+        padding-bottom: 30px;
+    }
+
+    .sidebar {
         float: none;
         width: 100%;
         padding: 5px 30px 15px;
+        clear: both;
     }
 
     form {
-        margin: 15px 0px;
+        margin: 15px 0px !important;
     }
 
     fieldset {
         padding: 0px 10px 10px;
+    }
+
+    div.encabezado, header {
+        height: 150px;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+
+    header {
+        font-size: 15px;
+    }
+
+    #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 7px;
     }
 }

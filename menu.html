@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Estrella de Gusteau's</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <img src="imgs/favicon.png" id="logo">
+        <h1>Menú Estrella del Restaurante Gusteau's</h1>
+    </header>
+
+    <nav>
+        <ul id="navbar" class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#entrantes">Entrantes</a></li>
+            <li><a href="#platosprincipales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <span class="material-symbols-outlined" onclick="closeBar()">close</span>
+        </ul>
+        <span class="material-symbols-outlined" onclick="openBar()">menu</span>
+    </nav>
+
+    <main>
+        <section class="menu-estrella">
+            <h2 id="entrantes">Entrantes</h2>
+            <ul>
+                <li data-alergenos="nueces mariscos">Ensalada Mediterránea con Nueces y Gambas
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="lacteos gluten">Fondue de Queso
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="lacteos">Patatas Rellenas al Horno
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li>Carpaccio de Calabacín con Crudités y Atún
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+            </ul>
+
+            <h2 id="platosprincipales">Platos Principales</h2>
+            <ul>
+                <li>Merluza al beurre blanc
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="mariscos">Paella de Mariscos
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li>Sopa de Verduras</li>
+                <li data-alergenos="gluten lacteos">Qiche Lorraine
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li>Ratatouille
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+            </ul>
+
+            <h2 id="postres">Postres</h2>
+            <ul>
+                <li data-alergenos="nueces gluten">Tarta de Chocolate y Nueces
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="gluten">Crepes
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="nueces">Macarons
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+                <li data-alergenos="lacteos">Gateau Saint Honoré
+                    <span nueces></span>
+                    <span mariscos></span>
+                    <span lacteos></span>
+                    <span gluten></span>
+                </li>
+            </ul>
+        </section>
+        <section class="sidebar">
+            <h2>Alérgenos</h2>
+            <ul>
+                <li data-alergenos="nueces">Nueces<span nueces></span></li>
+                <li data-alergenos="mariscos">Mariscos<span mariscos></span></li>
+                <li data-alergenos="lacteos">Lacteos<span lacteos></span></li>
+                <li data-alergenos="gluten">Gluten<span gluten></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#entrantes">Entrantes</a></li>
+            <li><a href="#platosprincipales">Platos Principales</a></li>
+            <li><a href="#postres">Postres</a></li>
+        </ul>
+        <p>&copy; 2024 Restaurante Gusteau's - París, Francia</p>
+    </footer>
+
+    <script>
+        function openBar() {
+            navbar.style.right = "0px";
+        }
+
+        function closeBar() {
+            navbar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
