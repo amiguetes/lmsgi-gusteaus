@@ -23,7 +23,9 @@ background-position: bottom;
 }
 
 div.menu ul li a:hover{
-color: #8b6f47;
+    color: #8b6f47;
+background-color: #5a3e36;
+border-bottom: 2px solid orange;
 
 }
 
@@ -33,14 +35,13 @@ color: #ffffff;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 18px;
 list-style-type: none;
-display: inline;
+
 }
 
 div.menu ul li{
     background-color: #a77e58;
-   padding: 2%;
-   text-align: center
-   
+    padding: 1%;
+   display: inline;
 }
 
 
