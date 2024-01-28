@@ -1,0 +1,210 @@
+body{
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+header{
+    background-image: url(../imgs/guesteaus.png);
+    background-size: cover;
+    background-position: center;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    text-shadow: 0 0 0.2em #ffffff, 0 0 0.2em #ffffff, 0 0 0.2em #ffffff
+}
+
+header img{
+    max-width: 70px;
+    height: auto;
+    margin-right: 40px;
+}
+
+nav {
+    background-color: #a77e58;
+    text-align: center;
+}
+
+nav ul {
+    margin: 4px 0px;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 15px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: #5a3e36;
+    background-color: #ecdcc6;
+    text-decoration: none;
+}
+
+main{
+    text-align: center;    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section.menu-estrella{
+    margin: 10px 10px;
+    padding: 0px 30px;
+    background-color: #ecdcc6;
+    border-radius: 20px;
+    width: 40%;
+}
+
+main section.menu-estrella ul {
+    padding: 5px 30px 5px 30px;
+}
+
+main section.menu-estrella ul li{
+    list-style: none;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 7px 0px;
+
+}
+
+main section.menu-estrella h2{
+    color: #5a3e36;
+    font-size: 45px;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+main section.tabla-alergenos{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #ecdcc6;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+main section.tabla-alergenos ul {
+    padding: 5px 30px 5px 30px;
+}
+
+main section.tabla-alergenos ul li{
+    list-style: none;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+main section.tabla-alergenos h2{
+    color: #5a3e36;
+    font-size: 40px;
+}
+
+li[data-alergenos="nueces mariscos"]{
+    color: #b13200;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="nueces"]{
+    color: #6d3500;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="mariscos"]{
+    color: #ff7b00;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="apio"]{
+    color: #2a9221;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="lacteos"]{
+    color: #696969;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="pescado"]{
+    color: #2528c5;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="moluscos"]{
+    color: #20a190;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo"]{
+    color: #afa510;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo mariscos"]{
+    color: #bb3434;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos="huevo lacteos"]{
+    color: #7540a7;
+    transition: text-decoration 0.4s, font-size 0.4s;
+}
+
+li[data-alergenos]:hover{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+footer {
+    clear: both;
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 1px;
+    margin: 4px 0px;
+}
+
+footer ul li{
+    display: inline;
+    list-style: none;
+    padding: 8px;
+}
+
+footer ul li a{
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+footer ul li a:hover {
+    color: #423522;
+    background-color: #ecdcc6;
+    text-decoration: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Restaurante Gusteau's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos_reservas.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div class="encabezado">
+            <img src="./imgs/logo.png" alt="Logo de la empresa">
+            <p>Reservas Restaurante Gusteau's</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="formulario">
+            <form action="/php/insertar_cv.php" method="post">
+                    <label for="nom">Nombre</label><br>
+                        <input type="text" name="Nombre" id="nom" placeholder="Ej. Nombre Apellido1 Appelido2" maxlength="30" size="35" required><br><br>
+                    <label for="ema">Email</label><br>
+                        <input type="email" name="Email" id="ema" placeholder="Ej. persona@direcc.ej" maxlength="30" size="35" required><br><br>
+                    <label for="telef">Teléfono</label><br>
+                        <input type="tel" name="Telefono" id="telef" placeholder="Ej. 123456789" maxlength="9" size="15" required><br><br>
+                    <label for="numpers">Número de personas</label><br>
+                        <input type="number" name="Numeropersonas" id="numpers" placeholder="Ej. 10" min="1" maxlength="2" size="10" required><br><br>
+                    <label for="fechora">Fecha / Hora</label><br>
+                        <input type="datetime-local" name="Fechahora" id="fechora" maxlength="30" size="15" required><br><br>
+                    <label for="desc">Comentarios / Peticiones especiales</label><br>
+                        <textarea id="desc" name="Descripción" cols="40" rows="5"></textarea><br><br>
+                    <button type="submit">Reservar Mesa</button>
+            </form>
+        </div>
+        <div class="pie">
+            <p>© 2024 Restaurante Gusteau's - París, Francia</p>
+            <ul>
+                <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
