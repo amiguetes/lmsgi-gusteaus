@@ -1,11 +1,115 @@
-p{
-    color:blue;
+#contenedor{
+    background-color: #fff8f0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+
 }
 
-div{
-    background-color: green;
-}
-
-p{
+div.encabezado{
+    background-image:url(/imgs/guesteaus.png);
+    color: #5a3e36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
     text-align: center;
+    height: 250px;
+    background-position-y:bottom;
+    background-position-x:center;
+    background-repeat:no-repeat;
+    
+}
+
+div.encabezado img {
+    width: 80px;
+    float: left;
+}
+
+div.menu ul li a{
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+div.menu ul li a:hover{
+    background-color: #8b6f47;
+    color: #5a3e36;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+
+div.contenido{
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    float: left;
+    width: 65%;
+    margin-bottom: 50px
+}
+
+div.sidebar{
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 50px
+    
+}
+
+div.pie{
+    background-color: #a77e58;
+    color: #ecdcc6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+div.pie a{
+    color: #5a3e36
+}
+div.pie a:hover{
+    color: #ecdcc6
+}
+#formularioReserva{
+    background-color: #fff8f0;
+    padding: 20px;
+    border: 1px solid #a77e58;
+    border-radius: 5px;
+}
+
+
+#formularioReserva input[type='text'],
+#formularioReserva input[type='email'],
+#formularioReserva input[type='tel'],
+#formularioReserva input[type='num'],
+#formularioReserva input[type='date'],
+#formularioReserva input[type='time'],
+#formularioReserva input[type='text'],
+#formularioReserva textarea{
+    border: 1px solid #a77e58;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff8f0;
+}
+#formularioReserva input[type='submit']{
+    background-color: #5a3e36;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+#formularioReserva input[type='submit']:hover{
+    background-color: #a77e58;
+}
+#formularioReserva label{
+    font-size: 16px;
+    display: block;
+    
 }

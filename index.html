@@ -8,7 +8,9 @@
 </head>
 <body>
     <div id="contenedor">
-        <div class="encabezado">Restaurante Gusteau's</div>
+        <div class="encabezado">Restaurante Gusteau's
+            <img src="/imgs/logo_gusteau_menu.png" alt="Logo Gusteau's">
+        </div>
         <div class="menu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -31,8 +33,20 @@
             </ul>
             <h3>Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+            
             <h3>Contacto</h3>
             <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+            
+            <form action="#" method="post" id="formularioReserva">
+                <label>Nombre:<br><input type="text" id="nombre" name="nombre" required maxlength="25"></label><br>
+                <label>Email:<br><input type="email" id="email" name="email" required maxlength="25"></label><br>
+                <label>Teléfono:<br><input type="tel" id="telefono" name="telefono" required maxlength="10"></label><br>
+                <label>Número de Personas:<br><input type="num" id="numPersonas" name="numPersonas" required></label><br>
+                <label>Fecha:<br><input type="date" id="fecha" name="fecha" required></label><br>
+                <label>Hora:<br><input type="time" id="hora" name="hora" required></label><br>
+                <label>Comentarios o Peticiones Especiales:<br><textarea id="comentarios" name="comentarios" rows="4"></textarea></label><br>
+                <input type="submit" value="Reservar Mesa">
+            </form>
         </div>
         <div class="sidebar">
             <h2>Eventos Especiales</h2>
@@ -43,7 +57,14 @@
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
         </div>
-        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia</div>
+        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia
+        <br>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Menú</a>
+        <a href="#">Contacto</a>
+        </div>
+    
+    
     </div>
 </body>
 </html>
