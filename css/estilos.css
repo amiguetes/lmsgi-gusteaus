@@ -1,9 +1,22 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-#contenedor {
+h1, h2, h3 {
+    margin: 20px 0px 10px;
+}
+
+ul:not(.nav) {
+    margin: 10px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+div#contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
     font-size: 16px;
@@ -37,26 +50,35 @@ div.menu .material-symbols-outlined {
     display: none;
 }
 
-#nav {
-    padding: 25px;
+.nav {
+    padding: 20px;
 }
 
-#nav li {
-    display: inline;
+.nav li {
+    display: inline-block;
     list-style: none;
-    margin: 0px 5px;
+    margin: 5px;
 }
 
-#nav li a {
+.nav li a {
     color: #ffffff;
     font-family: Helvetica, sans-serif;
-    font-size: 18px;
     padding: 5px 10px;
     text-decoration: none;
+    transition: background-color 400ms;
+}
+
+.nav li a:hover {
+    background-color: #a77e58;
+    text-decoration: underline 2px;
+}
+
+#navbar {
+    font-size: 18px;
     transition: color 400ms, background-color 400ms;
 }
 
-#nav li a:hover {
+#navbar li a:hover {
     color: #5a3e36;
     background-color: #ecdcc6;
     text-decoration: underline 2px;
@@ -67,7 +89,9 @@ div.contenido {
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 18px;
-    padding: 10px;
+    padding: 0px 50px 30px;
+    float: left;
+    width: 70%;
 }
 
 div.sidebar {
@@ -75,7 +99,9 @@ div.sidebar {
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 18px;
-    padding: 10px;
+    padding: 0px 35px 15px;
+    float: right;
+    width: 30%;
 }
 
 div.pie {
@@ -84,29 +110,16 @@ div.pie {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     text-align: center;
-    padding: 10px;
-}
-
-div.pie ul {
-    margin-bottom: 10px;
-}
-
-div.pie ul li {
-    display: inline;
-    list-style: none;
-    padding: 10px;
-}
-
-h1, h2, h3 {
-    margin: 20px 0px 10px;
+    padding: 0px 25px 15px;
+    clear: both;
 }
 
 @media only screen and (max-width: 600px) {
     div.menu {
-        height: 40px;
+        height: 50px;
     }
 
-    #nav {
+    #navbar {
         background: #a77e58;
         position: fixed;
         top: 0px;
@@ -123,28 +136,38 @@ h1, h2, h3 {
         color: #ffffff;
         cursor: pointer;
         float: right;
-        margin-right: 5px;
+        margin: 5px 10px;
+        transition: color 200ms;
     }
 
     div.menu .material-symbols-outlined:hover {
         color: #5a3e36;
-        background-color: #ecdcc6;
-        border-radius: 50%;
     }
 
-    #nav li {
+    #navbar li {
         display: block;
         margin: 25px;
         text-align: right;
     }
 
-    #nav:first-child {
+    #navbar:first-child {
         padding-top: 75px;
     }
 
-    #nav .material-symbols-outlined {
+    #navbar .material-symbols-outlined {
         position: absolute;
         top: 25px;
-        right: 20px;
+        right: 15px;
+    }
+
+    div.contenido {
+        float: none;
+        width: 100%;
+    }
+
+    div.sidebar {
+        float: none;
+        width: 100%;
+        padding: 10px 50px 20px;
     }
 }
